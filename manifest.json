@@ -1,0 +1,267 @@
+{
+  "name": "Business Template",
+  "description": "A professional template for business websites",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "repository": "https://github.com/yourusername/template-name",
+  "preview": "preview.png",
+  "editableComponents": [
+    {
+      "id": "header",
+      "name": "Header",
+      "component": "Header",
+      "props": [
+        {
+          "name": "logo",
+          "type": "image",
+          "default": "/images/logo.svg"
+        },
+        {
+          "name": "navigation",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          },
+          "default": [
+            { "label": "Home", "url": "/" },
+            { "label": "About", "url": "/about" },
+            { "label": "Services", "url": "/services" },
+            { "label": "Contact", "url": "/contact" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "name": "About Page",
+      "component": "About",
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "About Our Company"
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "image",
+          "type": "image",
+          "default": "/images/about.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "component": "Hero",
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "Welcome to Our Business"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "default": "We provide the best services in town"
+        },
+        {
+          "name": "backgroundImage",
+          "type": "image",
+          "default": "/images/hero-bg.jpg"
+        },
+        {
+          "name": "buttonText",
+          "type": "string",
+          "default": "Learn More"
+        },
+        {
+          "name": "buttonUrl",
+          "type": "string",
+          "default": "/about"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "name": "Features Section",
+      "component": "Features",
+      "props": [
+        {
+          "name": "sectionTitle",
+          "type": "string",
+          "default": "Our Features"
+        },
+        {
+          "name": "sectionSubtitle",
+          "type": "string",
+          "default": "Check out our amazing features that set us apart"
+        },
+        {
+          "name": "features",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "icon": { "type": "image" }
+            }
+          },
+          "default": [
+            {
+              "title": "Responsive Design",
+              "description": "Our templates are fully responsive and work on all devices, from mobile to desktop.",
+              "icon": "/images/feature-1.svg"
+            },
+            {
+              "title": "Customizable",
+              "description": "Easily customize colors, fonts, and content to match your brand identity.",
+              "icon": "/images/feature-2.svg"
+            },
+            {
+              "title": "SEO Optimized",
+              "description": "Built with best practices for search engine optimization to help your site rank higher.",
+              "icon": "/images/feature-3.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "component": "Footer",
+      "props": [
+        {
+          "name": "logo",
+          "type": "image",
+          "default": "/images/logo.svg"
+        },
+        {
+          "name": "companyName",
+          "type": "string",
+          "default": "Your Company"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "default": "Making the world a better place through innovative solutions."
+        },
+        {
+          "name": "columns",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "links": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": { "type": "string" },
+                    "url": { "type": "string" }
+                  }
+                }
+              }
+            }
+          },
+          "default": [
+            {
+              "title": "Company",
+              "links": [
+                { "label": "About", "url": "/about" },
+                { "label": "Careers", "url": "/careers" },
+                { "label": "Contact", "url": "/contact" }
+              ]
+            },
+            {
+              "title": "Resources",
+              "links": [
+                { "label": "Blog", "url": "/blog" },
+                { "label": "Newsletter", "url": "/newsletter" },
+                { "label": "Events", "url": "/events" }
+              ]
+            },
+            {
+              "title": "Legal",
+              "links": [
+                { "label": "Privacy", "url": "/privacy" },
+                { "label": "Terms", "url": "/terms" },
+                { "label": "Cookie Policy", "url": "/cookie-policy" }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "socialLinks",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "platform": { "type": "string" },
+              "url": { "type": "string" },
+              "icon": { "type": "image" }
+            }
+          },
+          "default": [
+            {
+              "platform": "Facebook",
+              "url": "https://facebook.com",
+              "icon": "/images/facebook.svg"
+            },
+            {
+              "platform": "Twitter",
+              "url": "https://twitter.com",
+              "icon": "/images/twitter.svg"
+            },
+            {
+              "platform": "Instagram",
+              "url": "https://instagram.com",
+              "icon": "/images/instagram.svg"
+            },
+            {
+              "platform": "LinkedIn",
+              "url": "https://linkedin.com",
+              "icon": "/images/linkedin.svg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "theme": {
+    "colors": {
+      "primary": {
+        "type": "color",
+        "default": "#0284c7"
+      },
+      "secondary": {
+        "type": "color",
+        "default": "#14b8a6"
+      },
+      "accent": {
+        "type": "color",
+        "default": "#f59e0b"
+      }
+    },
+    "fonts": {
+      "heading": {
+        "type": "font",
+        "default": "Inter"
+      },
+      "body": {
+        "type": "font",
+        "default": "Inter"
+      }
+    }
+  }
+}
